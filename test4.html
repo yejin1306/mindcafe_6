@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet" />
+    <style>
+        *{
+        font-family: 'Noto Sans KR', sans-serif !important;
+        }
+       .navbar-inverse{
+            background: #D1B4BD !important;
+            border: transparent !important;
+        }
+        .navbar-inverse *{
+            color: #382E32 !important;
+        }
+        .navbar-inverse .active>a{
+            background: #CC96AA !important;
+        }
+      th,td {
+        text-align: center;
+      }
+      footer {
+            padding: auto;
+            text-align: center;
+            background: #D1B4BD;
+            height: 150px;
+            width: 100%;
+            margin-top: 40px;
+        }
+        footer .container{
+            font-size: 12px;
+            top: 35%;
+            position: relative;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a
+            class="navbar-brand"
+            id="title"
+            href="index.html"
+            .navbar-brand{color:
+            black;
+            text-decoration:
+            none;
+            >심리상담카페</a
+          >
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="test1.html">심리진단</a></li>
+            <li><a href="test2.html">성향 검사</a></li>
+            <li><a href="test3.html">정신질환</a></li>
+            <li class="active"><a href="test4.html">상담정보</a></li>
+          </ul>
+        </div>
+        <!-- /.nav-collapse -->
+      </div>
+    </nav>
+
+    <br /><br /><br />
+    <div class="container">
+      <div role="tabpanel">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#seoul" aria-controls="seoul" role="tab" data-toggle="tab"
+              >서울</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="#gyeong_gi"
+              aria-controls="gyeong_gi"
+              role="tab"
+              data-toggle="tab"
+              >경기</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="#inchon"
+              aria-controls="inchon"
+              role="tab"
+              data-toggle="tab"
+              >인천</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="#Chungcheong"
+              aria-controls="Chungcheong"
+              role="tab"
+              data-toggle="tab"
+              >충청</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="#Gangwon"
+              aria-controls="Gangwon"
+              role="tab"
+              data-toggle="tab"
+              >강원</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="#messages"
+              aria-controls="messages"
+              role="tab"
+              data-toggle="tab"
+              >경상</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="#messages"
+              aria-controls="messages"
+              role="tab"
+              data-toggle="tab"
+              >전라</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="#messages"
+              aria-controls="messages"
+              role="tab"
+              data-toggle="tab"
+              >제주</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="seoul">
+          <br /><br />
+          <table class="table table-bordered table-hover">
+            <tr>
+              <th>양소영 심리상담센터</th>
+              <th>서울특별시 강남구 테헤란로53길</th>
+              <th>02-557-9701</th>
+            </tr>
+            <tr>
+              <th>마인드원 심리상담센터</th>
+              <th>서울특별시 강남구 테헤란로64길</th>
+              <th>02-400-3849</th>
+            </tr>
+            <tr>
+              <th>허그맘허그인 심리상담센터</th>
+              <th>서울특별시 강남구 테헤란로78길</th>
+              <th>02-568-6255</th>
+            </tr>
+            <tr>
+              <th>서울송정신건강의학과의원</th>
+              <th>서울 강서구 강서로 385번지 마곡동</th>
+              <th>02-2658-7891</th>
+            </tr>
+            <tr>
+              <th>늘벗정신건강의학과의원</th>
+              <th>서울 구로구 경인로 661</th>
+              <th>02-3439-8818</th>
+            </tr>
+            <tr>
+              <th>서울디딤정신건강의학과의원</th>
+              <th>서울 관악구 남부순환로 1905</th>
+              <th>02-872-0675</th>
+            </tr>
+            <tr>
+              <th>강신경정신과의원</th>
+              <th>서울 관악구 신림로 344</th>
+              <th>02-871-7121</th>
+            </tr>
+            <tr>
+              <th>서울그린정신건강의학과의원</th>
+              <th>서울 동대문구 망우로 123</th>
+              <th>02-2248-4860</th>
+            </tr>
+            <tr>
+              <th>가족사랑서울정신건강의학과의원</th>
+              <th>서울 동작구 보라매로 113</th>
+              <th>02-812-9494</th>
+            </tr>
+            <tr>
+              <th>밝은서울정신건강의학과의원</th>
+              <th>서울 서초구 동작대로 70</th>
+              <th>02-597-8399</th>
+            </tr>
+            <tr>
+              <th>최신경정신과의원</th>
+              <th>서울 서초구 강남대로53길 7</th>
+              <th>02-2267-3970</th>
+            </tr>
+            <tr>
+              <th>송파서울정신과의원</th>
+              <th>서울 송파구 송파대로 392</th>
+              <th>02-415-8468</th>
+            </tr>
+            <tr>
+              <th>가족사랑서울정신건강의학과의원</th>
+              <th>서울 영등포구 당산로 222</th>
+              <th>02-2068-7486</th>
+            </tr>
+            <tr>
+              <th>서울정신건강의학과의원(소아 전문)</th>
+              <th>서울 종로구 대학로11길 23</th>
+              <th>02-764-2700</th>
+            </tr>
+            
+            <tr>
+              <th>송신경정신과의원</th>
+              <th>서울 종로구 인사동5길 25</th>
+              <th>02-734-5648</th>
+            </tr>
+          </table>
+        </div>
+        <div role="tabpanel" class="tab-pane message" id="gyeong_gi">
+          <br /><br />
+          <table class="table table-bordered table-hover">
+            <tr>
+              <th>송동호정신건강의학과의원</th>
+              <th>경기 고양시 덕양구 화신로272번길 58</th>
+              <th>031-971-5551</th>
+            </tr>
+            <tr>
+              <th>이정신과의원</th>
+              <th>경기 구리시 경춘로 224</th>
+              <th>031-555-0575</th>
+            </tr>
+            <tr>
+              <th>마음자리정신과의원</th>
+              <th>경기 군포시 산본천로 62</th>
+              <th>031-343-3690</th>
+            </tr>
+            <tr>
+              <th>마음더하기의원</th>
+              <th>경기 김포시 김포한강8로 378</th>
+              <th>031-997-0029</th>
+            </tr>
+            <tr>
+              <th>메디피움의원</th>
+              <th>경기 성남시 분당구 분당내곡로 159</th>
+              <th>1899-0050</th>
+            </tr>
+            <tr>
+              <th>두드림정신과의원</th>
+              <th>경기 부천시 길주로 181</th>
+              <th>032-325-8262</th>
+            </tr>
+            <tr>
+              <th>평온정신과의원</th>
+              <th>경기 부천시 경인로 511</th>
+              <th>032-341-4556</th>
+            </tr>
+            <tr>
+              <th>이룸병원</th>
+              <th>경기 부천시 수도로 93</th>
+              <th>1599-7588</th>
+            </tr>
+            <tr>
+              <th>좋은생각정신건강의학과의원</th>
+              <th>경기 부천시 중동로 100</th>
+              <th>032-664-9111</th>
+            </tr>
+            <tr>
+              <th>수원우노병원</th>
+              <th>경기 수원시 권선구 장다리로 94</th>
+              <th>031-233-7543</th>
+            </tr>
+            <tr>
+              <th>나누리수원병원</th>
+              <th>경기 수원시 영통구 중부대로 295</th>
+              <th>1688-9797</th>
+            </tr>
+            <tr>
+              <th>아주편한병원</th>
+              <th>경기 수원시 장안구 경수대로 1111</th>
+              <th>031-269-5665</th>
+            </tr>
+            <tr>
+              <th>연세드림정신과의원</th>
+              <th>경기 안산시 단원구 광덕대로 161</th>
+              <th>031-413-9792</th>
+            </tr>
+            
+            <tr>
+              <th>이음병원</th>
+              <th>경기 용인시 기흥구 흥덕1로 97</th>
+              <th>031-212-1500</th>
+            </tr>
+            <tr>
+              <th>마음과마음정신과의원</th>
+              <th>경기 용인시 수지구 문정로 13</th>
+              <th>031-263-4975</th>
+            </tr>
+            <tr>
+              <th>행복주는의원</th>
+              <th>경기 오산시 오산로 206</th>
+              <th>031-377-8274</th>
+            </tr>
+            <tr>
+              <th>메타메디병원</th>
+              <th>경기 화성시 동탄원천로 338-7</th>
+              <th>031-8003-5800</th>
+            </tr>
+          </table>
+        </div>
+        <div role="tabpanel" class="tab-pane message" id="inchon">
+          <br /><br />
+          <table class="table table-bordered table-hover">
+            <tr>
+              <th>새희망병원</th>
+              <th>인천 남동구 남동대로922번길 54</th>
+              <th>032-431-2555</th>
+            </tr>
+            <tr>
+              <th>연세마음숲정신건강의학과의원</th>
+              <th>인천 남동구 논고개로123번길 17</th>
+              <th>032-424-3375</th>
+            </tr>
+            <tr>
+              <th>미래정신과의원</th>
+              <th>인천 남동구 성말로13번길 15</th>
+              <th>032-428-7500</th>
+            </tr>
+            <tr>
+              <th>의료법인정진의료재단영화병원</th>
+              <th>인천 남동구 소래역로 42</th>
+              <th>032-442-2020</th>
+            </tr>
+            <tr>
+              <th>서울정신건강의학과의원</th>
+              <th>인천 남동구 인하로489번길 28</th>
+              <th>032-433-5335</th>
+            </tr>
+            <tr>
+              <th>행복드림의원</th>
+              <th>인천 남동구 호구포로 808</th>
+              <th>032-467-0467</th>
+            </tr>
+            <tr>
+              <th>김택수정신건강의학과의원</th>
+              <th>인천 미추홀구 미추홀대로 716</th>
+              <th>032-446-2095</th>
+            </tr>
+            <tr>
+              <th>지성병원</th>
+              <th>인천 미추홀구 아암대로 109</th>
+              <th>032-862-5544</th>
+            </tr>
+            <tr>
+              <th>글로리병원</th>
+              <th>인천 부평구 길주로 655</th>
+              <th>032-262-9000</th>
+            </tr>
+            <tr>
+              <th>정건연세정신과의원</th>
+              <th>인천 부평구 부평대로 33</th>
+              <th>032-526-1900</th>
+            </tr>
+            <tr>
+              <th>마음행복정신건강의학과의원</th>
+              <th>인천 서구 중봉대로586번길 9-4</th>
+              <th>032-566-0700</th>
+            </tr>
+            <tr>
+              <th>블레스병원</th>
+              <th>인천 서구 청마로167번안길 17</th>
+              <th>032-563-1175</th>
+            </tr>
+            <tr>
+              <th>해솔정신과의원</th>
+              <th>인천 연수구 인천타워대로 251</th>
+              <th>032-814-8881</th>
+            </tr>
+            <tr>
+              <th>라온정신건강의학과의원</th>
+              <th>인천 연수구 컨벤시아대로 69</th>
+              <th>032-831-8906</th>
+            </tr>
+            <tr>
+              <th>연세오케이공항의원</th>
+              <th>인천 중구 공항로424번길 66</th>
+              <th>032-751-6119</th>
+            </tr>
+            <tr>
+              <th>영종삼성의원</th>
+              <th>인천 중구 영종대로 100</th>
+              <th>032-752-8275</th>
+            </tr>
+          </table>
+        </div>
+        <div role="tabpanel" class="tab-pane message" id="Chungcheong">
+          <br /><br />
+          <table class="table table-bordered table-hover">
+            <tr>
+              <th>두드림의원</th>
+              <th>충남 당진시 밤절로 140</th>
+              <th>041-357-6119</th>
+            </tr>
+            <tr>
+              <th>이레메디컬의원</th>
+              <th>충남 아산시 번영로234번길 2</th>
+              <th>041-532-8275</th>
+            </tr>
+            <tr>
+              <th>아산정신병원</th>
+              <th>충남 아산시 배방읍 휴대세교길 101</th>
+              <th>041-548-9851</th>
+            </tr>
+            <tr>
+              <th>뉴욕의원</th>
+              <th>충남 아산시 용화고길 97</th>
+              <th>041-533-8700</th>
+            </tr>
+            <tr>
+              <th>행복주는의원</th>
+              <th>충남 당진시 당진중앙2로 97</th>
+              <th>041-565-8275</th>
+            </tr>
+            <tr>
+              <th>연세조은정신건강의학과의원</th>
+              <th>충남 천안시 서북구 검은들3길 58</th>
+              <th>041-557-3456</th>
+            </tr>
+            <tr>
+              <th>삼성365의원</th>
+              <th>충남 천안시 서북구 봉정로 116</th>
+              <th>041-415-0105</th>
+            </tr>
+            <tr>
+              <th>좋은생각의원</th>
+              <th>충남 천안시 서북구 불당4로 106</th>
+              <th>041-564-9111</th>
+            </tr>
+            <tr>
+              <th>인정신과의원</th>
+              <th>충북 제천시 의림대로 128</th>
+              <th>043-645-7455</th>
+            </tr>
+            <tr>
+              <th>주사랑병원</th>
+              <th>충북 청주시 상당구 가덕면 보청대로 4673-61</th>
+              <th>043-286-0692</th>
+            </tr>
+            <tr>
+              <th>예사랑병원</th>
+              <th>충북 청주시 상당구 목련로 64</th>
+              <th>043-298-7337</th>
+            </tr>
+            <tr>
+              <th>청주병원</th>
+              <th>충북 청주시 상당구 상당로 163</th>
+              <th>043-220-1234</th>
+            </tr>
+            <tr>
+              <th>열린정신건강의학과의원</th>
+              <th>충북 청주시 청원구 상당로 307</th>
+              <th>043-221-5527</th>
+            </tr>
+            <tr>
+              <th>아이나래정신건강의학과의원</th>
+              <th>충북 청주시 흥덕구 대농로 66</th>
+              <th>043-278-1122</th>
+            </tr>
+            <tr>
+              <th>마음편한정신건강의학과의원</th>
+              <th>충북 청주시 흥덕구 풍산로 26</th>
+              <th>043-237-8872</th>
+            </tr>
+            <tr>
+              <th>마음앤정신건강의학과의원</th>
+              <th>충북 충주시 봉계1길 54</th>
+              <th>043-845-8920</th>
+            </tr>
+            <tr>
+              <th>호암병원</th>
+              <th>충북 충주시 예성로 16</th>
+              <th>043-852-3800</th>
+            </tr>
+            <tr>
+              <th>인성정신과의원</th>
+              <th>충북 충주시 중앙로 50-1</th>
+              <th>043-847-3079</th>
+            </tr>
+          </table>
+        </div>
+        <div role="tabpanel" class="tab-pane message" id="Gangwon">
+          <br /><br />
+          <table class="table table-bordered table-hover">
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            
+          </table>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">마음에도 이따금 감기가 찾아오곤 하는데 모르고 지나치면 심하게 앓는 수가 있다.<br> 자신의 마음을 파악하고 상처가 있다면 치료할 수 있도록 심리를 자가진단하는 사이트를 만들어 보았다.
+            <br><br>https://yejin1306.github.io/mindcafe
+        </span>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script>
+      $(function() {
+        $("#myTab a:last").tab("show");
+      });
+    </script>
+  </body>
+</html>

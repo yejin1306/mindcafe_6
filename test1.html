@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <style>
+      *{
+       font-family: 'Noto Sans KR', sans-serif !important;
+      }
+        .navbar-inverse{
+            background: #D1B4BD !important;
+            border: transparent !important;
+        }
+        .navbar-inverse *{
+            color: #382E32 !important;
+        }
+        .navbar-inverse .active>a{
+            background: #CC96AA !important;
+        }
+        th,td{
+            text-align: center;
+        }
+        .center{
+            text-align: center;
+        }
+        .modal-content{
+            padding: 20px 40px;
+        }
+        footer {
+            padding: auto;
+            text-align: center;
+            background: #D1B4BD;
+            height: 150px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        footer .container{
+            font-size: 12px;
+            top: 35%;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id="title" href="index.html" .navbar-brand{color: black; 
+                    text-decoration: none;>심리상담카페</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="test1.html">심리진단</a></li>
+                    <li><a href="test2.html">성향 검사</a></li>
+                    <li><a href="test3.html">정신질환</a></li>
+                    <li><a href="test4.html">상담정보</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <br><br><br>
+    <div class="container">
+
+        <div role="tabpanel">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#survey1" aria-controls="survey1" role="tab"
+                        data-toggle="tab">우울증 진단</a></li>
+                <li role="presentation"><a href="#survey2" aria-controls="survey2" role="tab" data-toggle="tab">불안증 진단</a></li>
+                <li role="presentation"><a href="#survey3" aria-controls="survey3" role="tab" data-toggle="tab">스트레스 진단</a></li>
+                <li role="presentation"><a href="#survey4" aria-controls="survey4" role="tab" data-toggle="tab">알콜장애 진단</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <br>
+                <div role="tabpanel" class="tab-pane active" id="survey1">
+                    <table class="table table-bordered table-hover">
+                        <tr>
+                            <th>질문</th>
+                            <th>매우 아니다</th>
+                            <th>아니다</th>
+                            <th>보통</th>
+                            <th>그렇다</th>
+                            <th>매우 그렇다</th>
+                        </tr>
+                        <tr>
+                            <td>나는 슬프고 기분이 울적하다.</td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 0)" name="1question1"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 1)" name="1question1"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 2)" name="1question1"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 3)" name="1question1"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 4)" name="1question1"></td>
+                        </tr>
+                        <tr>
+                            <td>나의 앞날에 희망이 없다고 느껴진다.</td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 0)" name="1question2"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 1)" name="1question2"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 2)" name="1question2"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 3)" name="1question2"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 4)" name="1question2"></td>
+                        </tr>
+                        <tr>
+                            <td>내 자신이 무가치한 실패자라고 생각된다.</td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 0)" name="1question3"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 1)" name="1question3"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 2)" name="1question3"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 3)" name="1question3"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 4)" name="1question3"></td>
+                        </tr>
+                        <tr>
+                            <td>나는 다른 사람에 비해 열등하고 뭔가 잘못되어 있다고 느껴진다.</td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 0)" name="1question4"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 1)" name="1question4"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 2)" name="1question4"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 3)" name="1question4"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 4)" name="1question4"></td>
+                        </tr>
+                        <tr>
+                            <td>나는 매사에 내 자신을 비판하고 자책한다.</td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 0)" name="1question5"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 1)" name="1question5"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 2)" name="1question5"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 3)" name="1question5"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 4)" name="1question5"></td>
+                        </tr>
+                        <tr>
+                            <td>어떤 일을 판단하고 결정하기가 어렵다.</td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 0)" name="1question6"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 1)" name="1question6"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 2)" name="1question6"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 3)" name="1question6"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 4)" name="1question6"></td>
+                        </tr>
+                        <tr>
+                            <td>나는 쉽게 화가 나고 짜증이 난다.</td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 0)" name="1question7"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 1)" name="1question7"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 2)" name="1question7"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 3)" name="1question7"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 4)" name="1question7"></td>
+                        </tr>
+                        <tr>
+                            <td>진로, 취미, 가족, 친구에 대한 관심을 잃었다.</td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 0)" name="1question8"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 1)" name="1question8"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 2)" name="1question8"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 3)" name="1question8"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 4)" name="1question8"></td>
+                        </tr>
+                        <tr>
+                            <td>어떤 일에 내 자신을 억지로 내몰지 않으면 일을 하기가 힘들다.</td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 0)" name="1question9"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 1)" name="1question9"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 2)" name="1question9"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 3)" name="1question9"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 4)" name="1question9"></td>
+                        </tr>
+                        <tr>
+                            <td>나의 외모는 추하다고 생각한다.</td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 0)" name="1question10"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 1)" name="1question10"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 2)" name="1question10"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 3)" name="1question10"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 4)" name="1question10"></td>
+                        </tr>
+                        <tr>
+                            <td>식욕이 없다. 또는 지나치게 많이 먹는다.</td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 0)" name="1question11"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 1)" name="1question11"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 2)" name="1question11"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 3)" name="1question11"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 4)" name="1question11"></td>
+                        </tr>
+                        <tr>
+                            <td>불면으로 고생하며 잠을 자도 개운하지 않다. 또는 지나치게 피곤하여 너무 많이 잔다.</td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 0)" name="1question12"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 1)" name="1question12"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 2)" name="1question12"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 3)" name="1question12"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 4)" name="1question12"></td>
+                        </tr>
+                        <tr>
+                            <td>성(SEX)에 대한 관심을 잃었다.</td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 0)" name="1question13"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 1)" name="1question13"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 2)" name="1question13"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 3)" name="1question13"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 4)" name="1question13"></td>
+                        </tr>
+                        <tr>
+                            <td>나의 건강에 대한 걱정을 많이 한다.</td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 0)" name="1question14"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 1)" name="1question14"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 2)" name="1question14"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 3)" name="1question14"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 4)" name="1question14"></td>
+                        </tr>
+                        <tr>
+                            <td>내 인생은 살 가치가 없으며 죽는 게 낫다는 생각을 한다.</td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 0)" name="1question15"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 1)" name="1question15"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 2)" name="1question15"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 3)" name="1question15"></td>
+                            <td><input type="radio" onclick="checkQuestion1(this, 4)" name="1question15"></td>
+                        </tr>
+                    </table>
+
+                    <!-- 버튼 -->
+                    <div class="center modal-btn1".style.display = ''>
+                        <button type="button" style="display:none" class="btn btn-success" data-toggle="modal" data-target=".bs-example-modal-lg1">결과보기</button>
+                        <button type="button" class="btn btn-warning">모든 답변에 기입</button>
+                    </div>
+                    
+                    <!-- 모달 -->
+                    <div class="modal fade bs-example-modal-lg1" id="2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <!-- 내용 -->
+                                <div>
+                                    <h3>총점 : <span class="totalScore">0</span>점</h3>
+                                    <div class="survey1 progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="75" style="min-width: 2em; width: 0%;">
+                                            0%
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>미응답 답안 있을 시 셀 색상 빨갛게</p>
+                                        <p>10점 이상 : 우울하지 않은 상태로 심리적으로 안정되어있어 편안함을 느낍니다.</p>
+                                        <p>20점 이상 : 가벼운 우울감이 느껴지는 상태로 가끔 우울함을 느끼기도 하지만 생활에서 어려움을 느끼지 않습니다.</p>
+                                        <p>30점 이상 : 우울해지는 감정을 종종 느낍니다.증상이 심해질 경우 전문가와의 상담이 필요합니다.</p>
+                                        <p>40점 이상 : 심한 우울 상태로 모든 상황에서 어려움을 느끼며 정서적으로도 불안정하여 즉시 병원 방문을 요합니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div role="tabpane1" class="tab-pane profile" id="survey2">
+                    <table class="table table-bordered table-hover">
+                        <tr>
+                            <th>질문</th>
+                            <th>매우 아니다</th>
+                            <th>아니다</th>
+                            <th>보통</th>
+                            <th>그렇다</th>
+                            <th>매우 그렇다</th>
+                        </tr>
+                        <tr>
+                            <td>나는 매사에 자신이 없다.</td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 0)" name="2question1"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 1)" name="2question1"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 2)" name="2question1"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 3)" name="2question1"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 4)" name="2question1"></td>
+                        </tr>
+                        <tr>
+                            <td>나는 타인의 시선을 많이 의식한다.</td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 0)" name="2question2"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 1)" name="2question2"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 2)" name="2question2"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 3)" name="2question2"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 4)" name="2question2"></td>
+                        </tr>
+                        <tr>
+                            <td>마음이 불안하고 안정이 안된다.</td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 0)" name="2question3"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 1)" name="2question3"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 2)" name="2question3"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 3)" name="2question3"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 4)" name="2question3"></td>
+                        </tr>
+                        <tr>
+                            <td>갑자기 불행한 일들이 닥칠 것 같은 기분이 든다.</td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 0)" name="2question4"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 1)" name="2question4"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 2)" name="2question4"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 3)" name="2question4"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 4)" name="2question4"></td>
+                        </tr>
+                        <tr>
+                            <td>친구들과 같이 있으면 어색하고 마음이 불편하다.</td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 0)" name="2question5"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 1)" name="2question5"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 2)" name="2question5"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 3)" name="2question5"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 4)" name="2question5"></td>
+                        </tr>
+                        <tr>
+                            <td>가만히 있지를 못하고 안절부절한다.</td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 0)" name="2question6"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 1)" name="2question6"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 2)" name="2question6"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 3)" name="2question6"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 4)" name="2question6"></td>
+                        </tr>
+                        <tr>
+                            <td>자주 반복되는 생각 떄문에 피곤하다.</td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 0)" name="2question7"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 1)" name="2question7"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 2)" name="2question7"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 3)" name="2question7"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 4)" name="2question7"></td>
+                        </tr>
+                        <tr>
+                            <td>중요한 일이 생기면 소변부터 마렵다.</td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 0)" name="2question8"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 1)" name="2question8"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 2)" name="2question8"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 3)" name="2question8"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 4)" name="2question8"></td>
+                        </tr>
+                        <tr>
+                            <td>처음 보는 사람 앞에서는 긴장이 심하다.</td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 0)" name="2question9"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 1)" name="2question9"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 2)" name="2question9"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 3)" name="2question9"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 4)" name="2question9"></td>
+                        </tr>
+                        <tr>
+                            <td>정신집중을 하기가 힘들다.</td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 0)" name="2question10"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 1)" name="2question10"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 2)" name="2question10"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 3)" name="2question10"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 4)" name="2question10"></td>
+                        </tr>
+                        <tr>
+                            <td>권위있는 사람들을 대할 때 두려운 생각이 든다.</td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 0)" name="2question11"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 1)" name="2question11"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 2)" name="2question11"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 3)" name="2question11"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 4)" name="2question11"></td>
+                        </tr>
+                        <tr>
+                            <td>혼자 있을 때에도 불안하고 두려운 생각이 든다.</td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 0)" name="2question12"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 1)" name="2question12"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 2)" name="2question12"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 3)" name="2question12"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 4)" name="2question12"></td>
+                        </tr>
+                        <tr>
+                            <td>사람들 앞에 설 때 떨린다.</td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 0)" name="2question13"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 1)" name="2question13"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 2)" name="2question13"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 3)" name="2question13"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 4)" name="2question13"></td>
+                        </tr>
+                        <tr>
+                            <td>불치병에 걸릴까봐 걱정된다.</td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 0)" name="2question14"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 1)" name="2question14"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 2)" name="2question14"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 3)" name="2question14"></td>
+                            <td><input type="radio" onclick="checkQuestion2(this, 4)" name="2question14"></td>
+                        </tr>
+                    </table>
+                               <!-- 버튼 -->
+                    <div class="center modal-btn2".style.display = ''>
+                        <button type="button" style="display:none" class="btn btn-success" data-toggle="modal" data-target=".bs-example-modal-lg2">결과보기</button>
+                        <button type="button" class="btn btn-warning">모든 답변에 기입</button>
+                    </div>
+                    
+                    <!-- 모달 -->
+                    <div class="modal fade bs-example-modal-lg2" id="resultModal2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <!-- 내용 -->
+                                <div>
+                                    <h3>총점 : <span class="totalScore2">0</span>점</h3>
+                                    <div class="survey2 progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="75" style="min-width: 2em; width: 0%;">
+                                            0%
+                                        </div>
+                                    </div>
+                                    <div>
+                                    <p>10점 이상 : 안정적인 정서 상태
+                                        당신은 정서가 안정되어 있습니다. 자신이 하고자 하는 일에 있어서 편안함을 느끼며 자신감있게 할 수 있습니다.</p>
+                                    <p>10점 이상 : 가끔 불안함을 느끼기도 하지만 정서적으로 큰 문제는 없습니다.
+                                        일상생활에서도 큰 어려움이 없으며 심리적으로 안정된 편입니다.</p>
+                                    <p>10점 이상 : 정서가 다소 불안정 할 수 있습니다. 자신이 하고자 하는 일에 있어서 스트레스상황에 마주하거나 어려운 일이 있으면 불안정해 질 수 있습니다.</p>
+                                    <p>10점 이상 : 당신은 정서가 매우 불안정한 상태입니다. 만일 지속적으로 이러한 문제가 있을 시에는 정밀심리검사 후 심리상담전문가와의 상담이 필요합니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+
+
+                <div role="tabpanel" class="tab-pane message" id="survey3">
+                    <table class="table table-bordered table-hover">
+                        <tr>
+                            <th>질문</th>
+                            <th>매우 아니다</th>
+                            <th>아니다</th>
+                            <th>보통</th>
+                            <th>그렇다</th>
+                            <th>매우 그렇다</th>
+                        </tr>
+                        <tr>
+                            <td>아침에 일어나는 게 두려운 적이 있다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question1"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question1"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question1"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question1"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question1"></td>
+                        </tr>
+                        <tr>
+                            <td>잠을 자기 어렵거나 자주 잠에서 깬다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question2"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question2"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question2"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question2"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question2"></td>
+                        </tr>
+                        <tr>
+                            <td>늘 쫓기는 기분이다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question3"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question3"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question3"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question3"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question3"></td>
+                        </tr>
+                        <tr>
+                            <td>식욕이 없거나 갑자기 폭식을 한다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question4"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question4"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question4"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question4"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question4"></td>
+                        </tr>
+                        <tr>
+                            <td>모든 일에 집중이 안되고 일을 잘하지 못한다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question5"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question5"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question5"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question5"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question5"></td>
+                        </tr>
+                        <tr>
+                            <td>기억력이 나빠서 잘 까먹는다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question6"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question6"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question6"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question6"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question6"></td>
+                        </tr>
+                        <tr>
+                            <td>모든 일이 하기 싫고, 자주 피로하다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question7"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question7"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question7"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question7"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question7"></td>
+                        </tr>
+                        <tr>
+                            <td>나에 대한 안 좋은 소문에 힘든 적이 있다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question8"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question8"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question8"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question8"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question8"></td>
+                        </tr>
+                        <tr>
+                            <td>말과 행동이 난폭해졌다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question9"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question9"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question9"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question9"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question9"></td>
+                        </tr>
+                        <tr>
+                            <td>갑자기 화가 날 때가 있다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question10"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question10"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question10"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question10"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question10"></td>
+                        </tr>
+                        <tr>
+                            <td>남들과 편하게 얘기하기를 꺼린다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question11"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question11"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question11"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question11"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question11"></td>
+                        </tr>
+                        <tr>
+                            <td>가족으로부터 가정에 소홀하다는 이야기를 들었다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question12"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question12"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question12"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question12"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question12"></td>
+                        </tr>
+                        <tr>
+                            <td>내가 하는 일이 지루하게 느껴진다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question13"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question13"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question13"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question13"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question13"></td>
+                        </tr>
+                        <tr>
+                            <td>직장 동료가 마음대로 행동한 적이 있다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question14"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question14"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question14"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question14"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question14"></td>
+                        </tr>
+                        <tr>
+                            <td>이해할 수 없는 요구 때문에 머리가 아팠다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question15"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question15"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question15"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question15"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question15"></td>
+                        </tr>
+                        <tr>
+                            <td>도망가고 싶은 적이 있다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question16"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question16"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question16"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question16"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 6)" name="3question16"></td>
+                        </tr>
+                        <tr>
+                            <td>나에게 시간 약속은 압박감이 드는 것이다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question17"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question17"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question17"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question17"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question17"></td>
+                        </tr>
+                        <tr>
+                            <td>반응이 과도하다는 말을 듣는다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question18"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question18"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question18"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question18"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question18"></td>
+                        </tr>
+                        <tr>
+                            <td>생각이 많아 해야 할 일들이 늦어진다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question19"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question19"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question19"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question19"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question19"></td>
+                        </tr>
+                        <tr>
+                            <td>쉽게 부끄러워하고 다른 사람의 반응에 민감하다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question20"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question20"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question20"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question20"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question20"></td>
+                        </tr>
+                        <tr>
+                            <td>동료와 사소한 말다툼 한 적이 있다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question21"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question21"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question21"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question21"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question21"></td>
+                        </tr>
+                        <tr>
+                            <td>내 의지와는 상관없는 일을 한 적 있다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question22"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question22"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question22"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question22"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question22"></td>
+                        </tr>
+                        <tr>
+                            <td>다른 사람이 나의 의견을 무시하곤 한다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question23"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question23"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question23"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question23"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question23"></td>
+                        </tr>
+                        <tr>
+                            <td>직장을 그만두고 싶은 적이 있다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question24"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question24"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question24"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question24"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question24"></td>
+                        </tr>
+                        <tr>
+                            <td>아무런 이유없이 나를 못살게 구는 사람이 있다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question25"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question25"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question25"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question25"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question25"></td>
+                        </tr>
+                        <tr>
+                            <td>많은 사람들 앞에서 혼난 적이 있다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question26"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question26"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question26"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question26"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question26"></td>
+                        </tr>
+                        <tr>
+                            <td>나에게만 유독 많은 일이 주어진다고 생각한 적이 있다.</td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 0)" name="3question27"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 1)" name="3question27"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 2)" name="3question27"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 3)" name="3question27"></td>
+                            <td><input type="radio" onclick="checkQuestion3(this, 4)" name="3question27"></td>
+                        </tr>
+
+                    </table>
+                            <!-- 버튼 -->
+                            <div class="center modal-btn3" .style.display=''>
+                                <button type="button" style="display:none" class="btn btn-success" data-toggle="modal" data-target=".bs-example-modal-lg3">결과보기</button>
+                                <button type="button" class="btn btn-warning">모든 답변에 기입</button>
+                            </div>
+                            
+                            <!-- 모달 -->
+                            <div class="modal fade bs-example-modal-lg3" id="resultModal3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <!-- 내용 -->
+                                        <div>
+                                            <h3>총점 : <span class="totalScore3">0</span>점</h3>
+                                            <div class="survey3 progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="75"
+                                                    style="min-width: 2em; width: 0%;">
+                                                    0%
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>미응답 답안 있을 시 셀 색상 빨갛게</p>
+                                                <p>10점 이하 : 심리적으로 안정되어있고 평안한 상태로 현재 특별한 정서적 불편을 느끼지 않는 상태입니다.</p>
+                                                <p>10점 이하 : 스트레스를 종종 받지만 심하지 않은 편입니다. 스트레스에 적절하게 대처한다면 삶의 적응력을 키워줄 수 있습니다.</p>
+                                                <p>10점 이하 : 스트레스를 많이 받는 편으로 불안함을 느끼고 있습니다. 심해질 경우 건강상의 문제가 발생할 수 있으니 전문가와 상담을 권유합니다.</p>
+                                                <p>10점 이하 : 고도의 스트레스로 인해 심리적으로 매우 불안정하며 일상생활에서 또한 많은 어려움을 느끼는 상황입니다.반드시 전문적인 치료를 요합니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                <br>
+                <div role="tabpanel" class="tab-pane alchol" id="survey4">
+                    <table class="table table-bordered table-hover">
+                        <tr>
+                            <th>질문</th>
+                            <th>매우 아니다</th>
+                            <th>아니다</th>
+                            <th>보통</th>
+                            <th>그렇다</th>
+                            <th>매우 그렇다</th>
+                        </tr>
+                        <tr>
+                            <td>원하는만큼 취하기 위해서 많은 양의 술을 마신다.</td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question1"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question1"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 2)" name="4question1"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 3)" name="4question1"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 4)" name="4question1"></td>
+                        </tr>
+                        <tr>
+                            <td>술마시기를 중단하거나 술마시는 양을 조절하려고 하지만 뜻대로 안된다.</td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question2"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question2"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 2)" name="4question2"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 3)" name="4question2"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 4)" name="4question2"></td>
+                        </tr>
+                        <tr>
+                            <td>반복적인 음주로 직장, 학교, 가정에서의 중요한 임무를 수행하지 못한다.</td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question3"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question3"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 2)" name="4question3"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 3)" name="4question3"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 4)" name="4question3"></td>
+                        </tr>
+                        <tr>
+                            <td>반복적인 음주로 직장, 학교, 가정에서의 중요한 임무를 수행하지 못한다.</td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question4"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question4"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 2)" name="4question4"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 3)" name="4question4"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 4)" name="4question4"></td>
+                        </tr>
+                        <tr>
+                            <td>술로 인해서 법적 문제를 일으킨 경험이 있다.</td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question5"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question5"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 2)" name="4question5"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 3)" name="4question5"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 4)" name="4question5"></td>
+                        </tr>
+                        <tr>
+                            <td>술로 인해서 배우자 또는 가족과 다툼을 일으킨 적이 있다.</td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question6"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question6"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 2)" name="4question6"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 3)" name="4question6"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 4)" name="4question6"></td>
+                        </tr>
+                        <tr>
+                            <td>술로 인해서 궤양(또는 다른 질병)이 생겼음에도 불구하고 계속 술을 마신다.</td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question7"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question7"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 2)" name="4question7"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 3)" name="4question7"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 4)" name="4question7"></td>
+                        </tr>
+                        <tr>
+                            <td>술을 마시지 않으면 특유의 신체반응(손떨림, 울렁거림, 답답함 등)이 나타난다.</td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question8"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question8"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 2)" name="4question8"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 3)" name="4question8"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 4)" name="4question8"></td>
+                        </tr>
+                        <tr>
+                            <td>술을 마시면 집중력 및 기억력이 손상된다.</td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question9"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question9"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 2)" name="4question9"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 3)" name="4question9"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 4)" name="4question9"></td>
+                        </tr>
+                        <tr>
+                            <td>술을 마시면 판단에 어려움이 생긴다.</td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question10"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question10"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 2)" name="4question10"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 3)" name="4question10"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 4)" name="4question10"></td>
+                        </tr>
+                        <tr>
+                            <td>술을 마시지 않으면 불안하고 초조하다.</td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question11"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question11"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 2)" name="4question11"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 3)" name="4question11"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 4)" name="4question11"></td>
+                        </tr>
+                        <tr>
+                            <td>원래 의도했던 것보다 많은 양의 술을 마시게 된다.</td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question12"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 1)" name="4question12"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 2)" name="4question12"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 3)" name="4question12"></td>
+                            <td><input type="radio" onclick="checkQuestion4(this, 4)" name="4question12"></td>
+                        </tr>
+
+                    </table>
+
+                    <!-- 버튼 -->
+                    <div class="center modal-btn4" .style.display=''>
+                        <button type="button" style="display:none" class="btn btn-success" data-toggle="modal" data-target=".bs-example-modal-lg4">결과보기</button>
+                        <button type="button" class="btn btn-warning">모든 답변에 기입</button>
+                    </div>
+                    
+                    <!-- 모달 -->
+                    <div class="modal fade bs-example-modal-lg4" id="resultModal4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <!-- 내용 -->
+                                <div>
+                                    <h3>총점 : <span class="totalScore4">0</span>점</h3>
+                                    <div class="survey4 progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="75"
+                                            style="min-width: 2em; width: 0%;">
+                                            0%
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>미응답 답안 있을 시 셀 색상 빨갛게</p>
+                                        <p>10점 이하 : 술을 즐기지 않으며 음주시에도 적당한 양을 마십니다.알콜 장애일 가능성이 없습니다.</p>
+                                        <p>10점 이하 : 음주를 할 때 적절한 양을 마시도록 노력하는 편이며 알코올에 대한 의존도도 낮은 편입니다.</p>
+                                        <p>10점 이하 : 알콜 장애일 가능성이 있으므로 자신을 통제하는 노력이 필요합니다. 심해질 경우 전문가와의 상담이 필요합니다.</p>
+                                        <p>10점 이하 : 알콜 장애일 가능성이 아주 높습니다. 절주하려는 노력이 필요하며 전문가와의 상담 또한 동반하여 치료해야 합니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">마음에도 이따금 감기가 찾아오곤 하는데 모르고 지나치면 심하게 앓는 수가 있다.<br> 자신의 마음을 파악하고 상처가 있다면 치료할 수 있도록 심리를 자가진단하는 사이트를 만들어 보았다.
+            <br><br>https://yejin1306.github.io/mindcafe
+        </span>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script>
+        $(function () {
+            $('#myTab a:last').tab('show')
+        })
+
+        var checkArray1= []
+        var survey1Scores = []
+        var countQs = document.querySelectorAll('#survey1 tr').length - 1
+        for (var i = 0; i < countQs; i++) {
+            survey1Scores[i] = 0
+            checkArray1[i] = false
+        }
+        function checkQuestion1(ele, score) {
+
+           var nowQsNumber = Number(ele.name.substr("1question".length)) - 1  
+
+            survey1Scores[nowQsNumber] = score
+            checkArray1[nowQsNumber] = true
+
+            // 버튼 결과 체크
+            for (var i = 0; i < checkArray1.length; i++) {
+                if(checkArray1[i] == false){
+                    document.querySelector('.modal-btn1 .btn-success').style.display = 'none'
+                    document.querySelector('.modal-btn1 .btn-warning').style.display = 'inline-block'
+                    break;
+                }else{
+                    document.querySelector('.modal-btn1 .btn-success').style.display = 'inline-block'
+                    document.querySelector('.modal-btn1 .btn-warning').style.display = 'none'   
+                }
+            }
+
+            var result = 0
+            for (var i = 0; i < survey1Scores.length; i++) {
+                result = result + survey1Scores[i]
+            }
+            document.querySelector('.totalScore').innerHTML = result
+            var progress1 = document.querySelector('.survey1.progress > .progress-bar')
+            progress1.innerHTML = result + '%'
+            progress1['aria-valuenow'] = result
+            progress1.style.width = result + '%'
+
+            progress1.classList.remove('progress-bar-success')
+            progress1.classList.remove('progress-bar-warning')
+            progress1.classList.remove('progress-bar-danger')
+
+            if (result > 10) {
+                progress1.classList.add('progress-bar-success')
+            }
+            if (result > 20) {
+                progress1.classList.add('progress-bar-warning')
+            }
+            if (result > 30) {
+                progress1.classList.add('progress-bar-danger')
+            }
+
+        }
+
+
+        var survey2Scores = []
+        var checkArray2 = []
+        var countQs = document.querySelectorAll('#survey2 tr').length - 1
+        for (var i = 0; i < countQs; i++) {
+            survey2Scores[i] = 0
+            checkArray2[i] = false
+        }
+        function checkQuestion2(ele, score) {
+
+            var nowQsNumber = Number(ele.name.substr("1question".length)) - 1
+
+            survey2Scores[nowQsNumber] = score
+            checkArray2[nowQsNumber] = true
+
+            // 버튼 결과 체크
+            for (var i = 0; i < checkArray2.length; i++) {
+                if (checkArray2[i] == false) {
+                    document.querySelector('.modal-btn2 .btn-success').style.display = 'none'
+                    document.querySelector('.modal-btn2 .btn-warning').style.display = 'inline-block'
+                    break;
+                } else {
+                    document.querySelector('.modal-btn2 .btn-success').style.display = 'inline-block'
+                    document.querySelector('.modal-btn2 .btn-warning').style.display = 'none'
+                }
+            }
+
+            var result = 0
+            for (var i = 0; i < survey2Scores.length; i++) {
+                result = result + survey2Scores[i]
+            }
+            document.querySelector('.totalScore2').innerHTML = result
+            var progress2 = document.querySelector('.survey2.progress > .progress-bar')
+            progress2.innerHTML = result + '%'
+            progress2['aria-valuenow'] = result
+            progress2.style.width = result + '%'
+
+            progress2.classList.remove('progress-bar-success')
+            progress2.classList.remove('progress-bar-warning')
+            progress2.classList.remove('progress-bar-danger')
+
+            if (result > 20) {
+                progress2.classList.add('progress-bar-success')
+            }
+            if (result > 30) {
+                progress2.classList.add('progress-bar-warning')
+            }
+            if (result > 40) {
+                progress2.classList.add('progress-bar-danger')
+            }
+
+        }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        var survey3Scores = []
+        var checkArray3 = []
+        var countQs = document.querySelectorAll('#survey3 tr').length - 1
+        for (var i = 0; i < countQs; i++) {
+            survey3Scores[i] = 0
+            checkArray3[i] = false
+
+        }
+        function checkQuestion3(ele, score) {
+
+            var nowQsNumber = Number(ele.name.substr("1question".length)) - 1
+
+            survey3Scores[nowQsNumber] = score
+            checkArray3[nowQsNumber] = true
+
+            // 버튼 결과 체크
+            for (var i = 0; i < checkArray3.length; i++) {
+                if (checkArray3[i] == false) {
+                    document.querySelector('.modal-btn3 .btn-success').style.display = 'none'
+                    document.querySelector('.modal-btn3 .btn-warning').style.display = 'inline-block'
+                    break;
+                } else {
+                    document.querySelector('.modal-btn3 .btn-success').style.display = 'inline-block'
+                    document.querySelector('.modal-btn3 .btn-warning').style.display = 'none'
+                }
+            }
+
+            var result = 0
+            for (var i = 0; i < survey3Scores.length; i++) {
+                result = result + survey3Scores[i]
+            }
+            document.querySelector('.totalScore3').innerHTML = result
+            var progress3 = document.querySelector('.survey3.progress > .progress-bar')
+            progress3.innerHTML = result + '%'
+            progress3['aria-valuenow'] = result
+            progress3.style.width = result + '%'
+
+            progress3.classList.remove('progress-bar-success')
+            progress3.classList.remove('progress-bar-warning')
+            progress3.classList.remove('progress-bar-danger')
+
+            if (result > 10) {
+                progress3.classList.add('progress-bar-success')
+            }
+            if (result > 20) {
+                progress3.classList.add('progress-bar-warning')
+            }
+            if (result > 30) {
+                progress3.classList.add('progress-bar-danger')
+            }
+
+        }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        var survey4Scores = []
+        var checkArray4 = []
+        var countQs = document.querySelectorAll('#survey4 tr').length - 1
+        for (var i = 0; i < countQs; i++) {
+            survey4Scores[i] = 0
+            checkArray4[i] = false
+        }
+        function checkQuestion4(ele, score) {
+
+            var nowQsNumber = Number(ele.name.substr("1question".length)) - 1
+
+            survey4Scores[nowQsNumber] = score
+            checkArray4[nowQsNumber] = true
+
+            // 버튼 결과 체크
+            for (var i = 0; i < checkArray4.length; i++) {
+                if (checkArray4[i] == false) {
+                    document.querySelector('.modal-btn4 .btn-success').style.display = 'none'
+                    document.querySelector('.modal-btn4 .btn-warning').style.display = 'inline-block'
+                    break;
+                } else {
+                    document.querySelector('.modal-btn4 .btn-success').style.display = 'inline-block'
+                    document.querySelector('.modal-btn4 .btn-warning').style.display = 'none'
+                }
+            }
+
+            var result = 0
+            for (var i = 0; i < survey4Scores.length; i++) {
+                result = result + survey4Scores[i]
+            }
+            document.querySelector('.totalScore4').innerHTML = result
+            var progress4 = document.querySelector('.survey4.progress > .progress-bar')
+            progress4.innerHTML = result + '%'
+            progress4['aria-valuenow'] = result
+            progress4.style.width = result + '%'
+
+            progress4.classList.remove('progress-bar-success')
+            progress4.classList.remove('progress-bar-warning')
+            progress4.classList.remove('progress-bar-danger')
+
+            if (result > 10) {
+                progress4.classList.add('progress-bar-success')
+            }
+            if (result > 20) {
+                progress4.classList.add('progress-bar-warning')
+            }
+            if (result > 30) {
+                progress4.classList.add('progress-bar-danger')
+            }
+
+        }
+    </script>
+</body>
+
+</html>
